@@ -21,9 +21,30 @@ var hourStatus = function() {
         } else {
             $(this).find(".task").addClass("present");
         }
-    });
+
+    })    
 };
 
 hourStatus();
 
+$(".saveBtn").on("click", function () {
+    var text = $(this).siblings(".task").val();
+    var hour = $(this).parent().attr("id");
 
+    localStorage.setItem(hour, text);
+
+    console.log(text, hour);
+
+});
+
+$("#09 .task").val(localStorage.getItem("09"));
+$("#10 .task").val(localStorage.getItem("10"));
+$("#11 .task").val(localStorage.getItem("11"));
+$("#12 .task").val(localStorage.getItem("12"));
+$("#13 .task").val(localStorage.getItem("13"));
+$("#14 .task").val(localStorage.getItem("14"));
+$("#15 .task").val(localStorage.getItem("15"));
+$("#16 .task").val(localStorage.getItem("16"));
+$("#17 .task").val(localStorage.getItem("17"));
+
+getTask();
