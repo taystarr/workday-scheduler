@@ -14,4 +14,4 @@
 
 ![alt text](./assets/WDS-SS.png)
 
-### Click [here]() to use my Work Day Scheduler!
+### Click [here](https://taystarr.github.io/workday-scheduler/) to use my Work Day Scheduler!
